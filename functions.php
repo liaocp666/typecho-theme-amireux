@@ -36,6 +36,22 @@ function themeConfig($form)
         _t('侧边栏/走走逛逛'),
         _t('友情链接格式：名称@链接地址：暮城留风@https://www.liaocp.cn/<br/>一行一条，逐行读取'));
     $form->addInput($links);
+
+    $customCSS = new Typecho_Widget_Helper_Form_Element_Textarea(
+        'customCSS',
+        null,
+        null,
+        _t('头部/自定义CSS'),
+        _t('在头部head标签中插入填写代码，无需填写style标签'));
+    $form->addInput($customCSS);
+
+    $customJS = new Typecho_Widget_Helper_Form_Element_Textarea(
+        'customJS',
+        null,
+        null,
+        _t('脚部/自定义JS'),
+        _t('在最后body标签前插入填写代码，无需填写script标签'));
+    $form->addInput($customJS);
 }
 
 function themeFields($layout)

@@ -35,4 +35,7 @@
             });
         });
     </script>
+    <script type="text/javascript">
+        <?php $this->options->customJS() ?>
+    </script>
 <?php $this->footer(); ?>

@@ -33,4 +33,7 @@
     <?php else : ?>
         <?php $this->header('rss1=&rss2=&atom&generator=&xmlrpc=&wlw=&template='); ?>
     <?php endif; ?>
+    <style type="text/css">
+        <?php $this->options->customCSS() ?>
+    </style>
 </head>
