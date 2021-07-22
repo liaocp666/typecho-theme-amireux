@@ -14,10 +14,10 @@
                 <span class="name">
                     <?php $this->author(); ?>
                 </span>
-                <span>
+                <span style="color: #4a4a4ab5">
                     <?php $this->options->authorMeta() ?>
                 </span>
-                <div class="remark">
+                <div class="remark" style="color: #4a4a4ab5">
                     <?php $this->options->authorRemark() ?>
                 </div>
             </div>

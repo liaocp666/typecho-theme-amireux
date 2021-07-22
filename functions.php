@@ -1,34 +1,6 @@
 <?php
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
-// 获取缩略图
-function showThumbnail($widget)
-{
-    $cai = '';
-    $attach = $widget->attachments(1)->attachment;
-    $pattern = '/\<img.*?src\=\"(.*?)\"[^>]*>/i';
-    $patternMD = '/\!\[.*?\]\((http(s)?:\/\/.*?(jpg|png))/i';
-    $patternMDfoot = '/\[.*?\]:\s*(http(s)?:\/\/.*?(jpg|png))/i';
-
-
-    if ($attach && $attach->isImage) {
-
-        $ctu = $attach->url . $cai;
-    } //调用第一个图片附件
-    else
-        //下面是调用文章第一个图片
-        if (preg_match_all($pattern, $widget->content, $thumbUrl)) {
-            $ctu = $thumbUrl[1][0] . $cai;
-        } //如果是内联式markdown格式的图片
-        else if (preg_match_all($patternMD, $widget->content, $thumbUrl)) {
-            $ctu = $thumbUrl[1][0] . $cai;
-        } //如果是脚注式markdown格式的图片
-        else if (preg_match_all($patternMDfoot, $widget->content, $thumbUrl)) {
-            $ctu = $thumbUrl[1][0] . $cai;
-        }
-    return $ctu;
-}
-
 function themeConfig($form)
 {
     $authorImg = new Typecho_Widget_Helper_Form_Element_Text(
@@ -66,6 +38,70 @@ function themeConfig($form)
     $form->addInput($links);
 }
 
+function themeFields($layout)
+{
+    $thumb = new Typecho_Widget_Helper_Form_Element_Text(
+        'thumb',
+        NULL,
+        NULL,
+        '自定义文章缩略图',
+        '优先显示填写的缩略图 -> 文章内第一张图片'
+    );
+    $layout->addItem($thumb);
+
+    $type = new Typecho_Widget_Helper_Form_Element_Select(
+        'type',
+        array('post' => '文章', 'notice' => '通知'),
+        'post',
+        '请选择文章类型',
+        '通知：使用通知块在页面显示；文章：正常文章排版'
+    );
+    $layout->addItem($type);
+
+    $desc = new Typecho_Widget_Helper_Form_Element_Text(
+        'desc',
+        NULL,
+        NULL,
+        'SEO描述',
+        '用于填写文章或独立页面的SEO描述，如果不填写则显示默认描述'
+    );
+    $layout->addItem($desc);
+
+    $keywords = new Typecho_Widget_Helper_Form_Element_Text(
+        'keywords',
+        NULL,
+        NULL,
+        'SEO关键词',
+        '用于填写文章或独立页面的SEO关键词，如果不填写则显示默认关键词'
+    );
+    $layout->addItem($keywords);
+}
+
+// 获取缩略图
+function showThumbnail($widget)
+{
+    $cai = '';
+    $attach = $widget->attachments(1)->attachment;
+    $pattern = '/\<img.*?src\=\"(.*?)\"[^>]*>/i';
+    $patternMD = '/\!\[.*?\]\((http(s)?:\/\/.*?(jpg|png))/i';
+    $patternMDfoot = '/\[.*?\]:\s*(http(s)?:\/\/.*?(jpg|png))/i';
+
+
+    if ($widget->fields->thumb) {
+        // 填写了缩略图字段
+        $ctu = $widget->fields->thumb;
+    } else if (preg_match_all($pattern, $widget->content, $thumbUrl)) {
+        //下面是调用文章第一个图片
+        $ctu = $thumbUrl[1][0] . $cai;
+    } else if (preg_match_all($patternMD, $widget->content, $thumbUrl)) {
+        //如果是内联式markdown格式的图片
+        $ctu = $thumbUrl[1][0] . $cai;
+    } else if (preg_match_all($patternMDfoot, $widget->content, $thumbUrl)) {
+        //如果是脚注式markdown格式的图片
+        $ctu = $thumbUrl[1][0] . $cai;
+    }
+    return $ctu;
+}
 
 /**
  * 输出友情链接
@@ -79,10 +115,4 @@ function links()
         list($title, $siteUrl) = explode('@', $list[$x]);
         echo '<div class="column is-4"><a href="' . $siteUrl . '" title="' . $title . '" target="_blank">' . $title . '</a></div>';
     }
-}
-
-function avatar()
-{
-    $user = Typecho_Widget::widget('Widget_User');
-    echo  Typecho_Common::gravatarUrl($user->mail, 220, 'X', 'mm', true);
 }
