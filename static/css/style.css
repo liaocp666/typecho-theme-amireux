@@ -22,6 +22,10 @@ a:hover {
     font-size: 14px;
 }
 
+.navbar-link.is-active, .navbar-link:focus, .navbar-link:focus-within, .navbar-link:hover, a.navbar-item.is-active, a.navbar-item:focus, a.navbar-item:focus-within, a.navbar-item:hover {
+    background-color: #ffffff !important;
+}
+
 .site-navbar-item:hover {
     background-color: #ffffff !important;
 }
