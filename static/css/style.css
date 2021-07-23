@@ -9,12 +9,13 @@ a:hover {
 }
 
 .site-title {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
 
 .site-title a {
     color: #000 !important;
+    text-shadow: #b8b8b8 0.1em 0.1em 0.2em;
 }
 
 .site-navbar-item {
@@ -112,7 +113,7 @@ a:hover {
 }
 
 .sidebar a {
-    font-size: 15px;
+    font-size: 15pxc;
     color: #4a4a4a;
 }
 
@@ -268,26 +269,22 @@ footer {
     margin: 0 auto;
 }
 
+.search-wrap {
+    display: flex;
+}
+
 .search-input:focus {
     opacity: 1 !important;
     top: 0px;
-}
-
-.search-wrap:hover .search-input {
-    opacity: 1 !important;
-    top: 0px;
+    width: 120px;
 }
 
 .search-input {
-    position: absolute;
     background: rgba(0, 0, 0, 0);
-    right: 20px;
-    top: -50px;
-    opacity: 0;
     border: 0px;
     outline: none;
-    border-bottom: 1px solid rgb(167 182 194 / 50%);
     transition: .5s;
+    width: 0px;
 }
 
 .comments-form {
