@@ -1,8 +1,7 @@
 @charset "UTF-8";
 
 *, body, html {
-    font-family: PingFang SC, Hiragino Sans GB, Microsoft YaHei, STHeiti, WenQuanYi Micro Hei, Helvetica, Arial,
-    sans-serif;
+    font-family: 'Noto Sans TC', sans-serif;
 }
 
 a:hover {
@@ -113,7 +112,7 @@ a:hover {
 }
 
 .sidebar a {
-    font-size: 14px;
+    font-size: 15px;
     color: #4a4a4a;
 }
 
@@ -354,8 +353,12 @@ footer {
     text-overflow: ellipsis;
 }
 
-.content h2, .content h3 {
-    font-size: 1.25em;
+.content p {
+    line-height: 1.875;
+}
+
+.content h2, .content h3, .content h4, .content h5, .content h6 {
+    padding-top: 10px;
 }
 
 #comments figure {
