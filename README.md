@@ -19,7 +19,7 @@
 ## 鸣谢
 
 ### 开源项目
-[bulma](https://github.com/jgthms/bulma) | [JQuery](https://github.com/jquery/jquery) | [simplelightbox](https://github.com/andreknieriem/simplelightbox)
+[bulma](https://github.com/jgthms/bulma) | [simplelightbox](https://github.com/andreknieriem/simplelightbox)
 
 ### 其它
 
