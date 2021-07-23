@@ -15,19 +15,10 @@
             </div>
         </section>
     </footer>
+    <script src="<?php $this->options->themeUrl('static/js/amireux.js'); ?>"></script>
+    <!--为了自定义时方便写jq相关代码，所以引入，主题未使用-->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/simplelightbox@2.8.0/dist/simple-lightbox.min.js"></script>
-    <script type="text/javascript">
-        var lightbox = new SimpleLightbox('.site-post-content a', {
-            captionPosition: 'outside'
-        });
-        $(document).ready(function () {
-            $(".navbar-burger").click(function () {
-                $(".navbar-burger").toggleClass("is-active");
-                $(".navbar-menu").toggleClass("is-active");
-            });
-        });
-    </script>
     <script type="text/javascript">
         <?php $this->options->customJS() ?>
     </script>
