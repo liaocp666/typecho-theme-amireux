@@ -1,5 +1,5 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
-    <footer>
+    <footer class="site-content">
         <section class="container">
             <div class="columns">
                 <div class="column is-12">
@@ -21,13 +21,6 @@
         var lightbox = new SimpleLightbox('.site-post-content a', {
             captionPosition: 'outside'
         });
-        $(document).ready(function () {
-            $(".navbar-burger").click(function () {
-                $(".navbar-burger").toggleClass("is-active");
-                $(".navbar-menu").toggleClass("is-active");
-            });
-        });
-
         $(document).ready(function () {
             $(".navbar-burger").click(function () {
                 $(".navbar-burger").toggleClass("is-active");

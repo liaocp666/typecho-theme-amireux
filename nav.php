@@ -32,7 +32,7 @@
                     <?php endwhile; ?>
                 </div>
 
-                <div class="navbar-end">
+                <div class="navbar-end is-hidden-touch">
                     <div class="navbar-item">
                         <form id="search" method="post" action="<?php $this->options->siteUrl(); ?>" role="search">
                             <div class="search-wrap" style="position: relative;"
