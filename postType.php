@@ -30,7 +30,7 @@ if (!empty($thumb)): ?>
 
         <div class="item-image is-hidden-touch">
             <figure class="image is-4by3">
-                <a href="<?php $this->permalink() ?>"><img src="<?php echo $thumb; ?>"></a>
+                <a href="<?php $this->permalink() ?>"><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="<?php echo $thumb; ?>"></a>
             </figure>
         </div>
     </div>

@@ -17,3 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+window.onload = function () {
+    new LazyLoad(document.querySelectorAll(".lazyload"));
+}

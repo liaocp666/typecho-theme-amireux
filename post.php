@@ -30,7 +30,7 @@
                                 <div class="site-post-content" itemprop="articleBody">
                                     <?php
                                     $pattern = '/\<img.*?src\=\"(.*?)\".*?alt\=\"(.*?)\"[^>]*>/i';
-                                    $replacement = '<a href="$1"/><img src="$1" alt="$2" title="$2"></a>';
+                                    $replacement = '<a href="$1"/><img class="lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="$1" alt="$2" title="$2"></a>';
                                     $content = preg_replace($pattern, $replacement, $this->content);
                                     echo $content;
                                     ?>
