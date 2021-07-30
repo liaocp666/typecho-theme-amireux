@@ -140,7 +140,9 @@ a:hover {
 .author-meta .name {
     color: #182026;
     font-weight: 600;
-    padding-right: 15px;
+    padding-right: 10px;
+    font-size: 16px;
+    text-shadow: #b8b8b8 0.1em 0.1em 0.2em;
 }
 
 .sidebar-item {
