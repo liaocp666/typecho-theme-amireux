@@ -2,7 +2,7 @@
 <?php $this->need('header.php'); ?>
 <body itemscope itemtype="https://schema.org/Blog">
 <?php $this->need('nav.php'); ?>
-<div class="site-content content">
+<div class="site-content content fade-in-bottom">
     <div class="container is-max-widescreen">
         <div class="columns">
             <div class="column is-8">
