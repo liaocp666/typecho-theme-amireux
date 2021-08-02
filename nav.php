@@ -43,6 +43,7 @@
                                 </svg>
                             </a>
                             <input type="text" id="searchInput" name="s" class="search-input"
+                                   autocomplete="off"
                                    placeholder="<?php _e('输入关键字搜索'); ?>" required/>
                             </label>
                         </form>
