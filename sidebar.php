@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="sidebar is-hidden-touch">
-    <div class="sidebar-item box">
+    <div class="sidebar-item box fade-in-bottom-item">
         <div class="sidebar-title">
             <span class="name">我的名片</span>
         </div>
@@ -23,7 +23,7 @@
             </div>
         </div>
     </div>
-    <div class="sidebar-item">
+    <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
             <span class="name">这些标签</span>
         </div>
@@ -42,7 +42,7 @@
             </div>
         </div>
     </div>
-    <div class="sidebar-item">
+    <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
             <span class="name">他在说话</span>
         </div>
@@ -60,7 +60,7 @@
         </div>
     </div>
     <?php if ($this->is('index')) : ?>
-    <div class="sidebar-item">
+    <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
             <span class="name">走走逛逛</span>
         </div>

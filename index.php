@@ -18,7 +18,7 @@ $this->need('header.php');
         <div class="columns">
             <div class="column is-8">
                 <?php while ($this->next()): ?>
-                    <article class="item" itemscope itemtype="http://schema.org/BlogPosting">
+                    <article class="item fade-in-bottom-item" itemscope itemtype="http://schema.org/BlogPosting">
                         <div class="columns">
                             <?php if ($this->fields->type != null && $this->fields->type == 'notice'): ?>
                                 <?php $this->need('noticeType.php'); ?>

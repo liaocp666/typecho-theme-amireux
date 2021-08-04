@@ -432,6 +432,37 @@ select:-webkit-autofill {
     }
 }
 
+.fade-in-bottom-item:nth-child(1) {
+    animation: fade-in-bottom .6s .2s forwards;
+    -webkit-animation: fade-in-bottom .6s .2s backwards;
+}
+
+.fade-in-bottom-item:nth-child(2) {
+    animation: fade-in-bottom .6s .4s forwards;
+    -webkit-animation: fade-in-bottom .6s .4s backwards;
+}
+
+.fade-in-bottom-item:nth-child(3) {
+    animation: fade-in-bottom .6s .6s forwards;
+    -webkit-animation: fade-in-bottom .6s .6s backwards;
+}
+
+.fade-in-bottom-item:nth-child(4) {
+    animation: fade-in-bottom .6s .8s forwards;
+    -webkit-animation: fade-in-bottom .6s .8s backwards;
+}
+
+.fade-in-bottom-item:nth-child(5) {
+    animation: fade-in-bottom .6s .10s forwards;
+    -webkit-animation: fade-in-bottom .6s .10s backwards;
+}
+
+.fade-in-bottom-item:nth-child(6) {
+    animation: fade-in-bottom .6s .12s forwards;
+    -webkit-animation: fade-in-bottom .6s .12s backwards;
+}
+
+
 .fade-in-top {
     -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
     animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;

@@ -1,7 +1,7 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <header class="site-header">
     <section class="container">
-        <nav class="navbar fade-in-top" role="navigation" aria-label="main navigation">
+        <nav class="navbar" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
                 <h1 class="navbar-item site-title" href="<?php $this->options->siteUrl(); ?>" itemprop="name">
                     <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a>

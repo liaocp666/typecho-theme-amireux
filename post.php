@@ -6,7 +6,7 @@
     <div class="container is-max-widescreen">
         <div class="columns">
             <div class="column is-8">
-                <div class="item">
+                <div class="item fade-in-bottom-item">
                     <div class="columns">
                         <div class="column is-12">
                             <article class="item-text" itemscope itemtype="http://schema.org/BlogPosting">
