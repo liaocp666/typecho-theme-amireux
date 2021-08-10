@@ -7,7 +7,7 @@
         <div class="author-info">
             <div class="author-image">
                 <figure class="image image is-64x64">
-                    <img class="is-rounded lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="<?php $this->options->authorImg() ?>">
+                    <img class="is-rounded lazyload" src="data:image/gif;base64,R0lGODdhAQABAPAAAMPDwwAAACwAAAAAAQABAAACAkQBADs=" data-src="<?php echo $this->options->authorImg() . '&time=' . time() ?>">
                 </figure>
             </div>
             <div class="author-meta">
