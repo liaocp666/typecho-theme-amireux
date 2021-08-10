@@ -45,8 +45,8 @@
 <?php } ?>
 <div id="comments">
     <?php $this->comments()->to($comments); ?>
-    <h6 id="response"><?php _e('添加新评论'); ?></h6>
     <?php if ($this->allow('comment')): ?>
+    <h6 id="response"><?php _e('添加新评论'); ?></h6>
         <div id="<?php $this->respondId(); ?>" class="respond">
             <div class="cancel-comment-reply">
                 <?php $comments->cancelReply(); ?>
