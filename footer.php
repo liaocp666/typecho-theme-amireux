@@ -5,7 +5,7 @@
                 <div class="column is-12">
                     <div class="site-footer">
                         <span class="site-footer-info">
-                            © 2021 Chunping.Liao.  All rights reserved.
+                            © 2021 <?php $this->options->title(); ?>.  All rights reserved.
                         </span>
                         <span class="site-footer-powered is-hidden-touch">
                             Powered by Typecho · Theme Designed by <a href="https://github.com/LeacHar/typecho-theme-amireux" target="_blank">Amireux</a>
