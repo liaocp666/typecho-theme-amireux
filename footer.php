@@ -8,7 +8,7 @@
                             © 2021 Chunping.Liao.  All rights reserved.
                         </span>
                         <span class="site-footer-powered is-hidden-touch">
-                            Powered by Typecho · Designed by 暮城留风
+                            Powered by Typecho · Theme Designed by <a href="https://github.com/LeacHar/typecho-theme-amireux" target="_blank">Amireux</a>
                         </span>
                     </div>
                 </div>
