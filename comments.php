@@ -82,7 +82,7 @@
                                   required><?php $this->remember('text'); ?></textarea>
                         </div>
                         <div class="column is-12 has-text-right">
-                            <button type="submit" class="button is-small submit"><?php _e('提交评论'); ?></button>
+                            <button type="submit" class="button is-small submit" style="margin-bottom: 10px"><?php _e('提交评论'); ?></button>
                         </div>
                     </div>
                 </form>
