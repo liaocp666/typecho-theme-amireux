@@ -9,9 +9,6 @@ if (!empty($thumb)): ?>is-9<?php else: ?>is-12<?php endif; ?>">
         </div>
         <div class="site-content-item-meta" itemscope
              itemtype="http://schema.org/Person">
-                                        <span><a itemprop="name" href="<?php $this->author->permalink(); ?>"
-                                                 rel="author"><?php $this->author(); ?></a></span>
-            <span>&nbsp;·&nbsp;</span>
             <span><a href=""><?php $this->category('、'); ?></a></span>
             <span>&nbsp;·&nbsp;</span>
             <span>
