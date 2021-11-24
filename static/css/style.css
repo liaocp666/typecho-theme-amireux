@@ -42,7 +42,7 @@ a:hover {
 }
 
 .site-header {
-    border-bottom: 1px rgb(167 182 194 / 50%) dashed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     overflow: hidden;
 }
 
@@ -129,7 +129,7 @@ a:hover {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border-bottom: 1px rgb(167 182 194 / 50%) dashed;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
     padding: 10px 0px;
 }
 
