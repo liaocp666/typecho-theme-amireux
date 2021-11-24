@@ -2,7 +2,7 @@
 <div class="sidebar is-hidden-touch">
     <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
-            <span class="name">我的名片</span>
+            <span class="name">关于博主</span>
         </div>
         <div class="author-info">
             <div class="author-image">
@@ -25,7 +25,7 @@
     </div>
     <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
-            <span class="name">这些标签</span>
+            <span class="name">热门标签</span>
         </div>
         <div class="sidebar-tag">
             <div class="columns is-multiline">
@@ -44,7 +44,7 @@
     </div>
     <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
-            <span class="name">他在说话</span>
+            <span class="name">最新评论</span>
         </div>
         <div class="sidebar-comments">
             <ul>
@@ -62,7 +62,7 @@
     <?php if ($this->is('index')) : ?>
     <div class="sidebar-item fade-in-bottom-item">
         <div class="sidebar-title">
-            <span class="name">走走逛逛</span>
+            <span class="name">友情链接</span>
         </div>
         <div class="sidebar-tag">
             <div class="columns is-multiline">
