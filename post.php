@@ -5,7 +5,7 @@
 <div class="site-content content fade-in-bottom">
     <div class="container is-max-widescreen">
         <div class="columns">
-            <div class="column is-8">
+            <div class="column is-12">
                 <div class="item fade-in-bottom-item">
                     <div class="columns">
                         <div class="column is-12">
@@ -61,9 +61,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="column is-4">
-                <?php $this->need('sidebar.php'); ?>
             </div>
         </div>
     </div>
